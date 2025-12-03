@@ -3,8 +3,8 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/', // important for Vercel deployment
+  base: '/', // Important for Vercel routing
   optimizeDeps: {
-    exclude: ['lucide-react'],
+    exclude: ['lucide-react'], // if you need to exclude anything
   },
 });
